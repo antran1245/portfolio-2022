@@ -21,7 +21,7 @@ export default function FrontPage(props) {
         return () => clearInterval(interval)
     }, [blink, count, display])
     return(
-        <Container fluid id="frontpage" style={{display: show?'flex':'none'}}>
+        <Container fluid="true" id="frontpage" style={{display: show?'flex':'none'}}>
                 <Row>
                     <p>
                         {

@@ -1,30 +1,32 @@
-import { Col, Image, Modal, Row } from "react-bootstrap";
-import joke_board from "../img/joke_board.png";
-import crime_report from "../img/crime_report.png";
-import todo_morning from "../img/todo_morning.png";
-import todo_night from "../img/todo_night.png";
+import { Col, Container, Row } from "react-bootstrap";
+import JokeBoard from "./projects/JokeBoard";
+import ToDo from "./projects/ToDo";
+import CrimeReport from "./projects/CrimeReport";
+import Location from './projects/Location';
 import "../sass/project.scss";
-import { useState } from "react";
 
 export default function Projects() {
-    const [show, setShow] = useState(false);
-    const [image, setImage] = useState([]);
-
-    const handleShow = (imageArr) => {
-        setImage([...imageArr]);
-        setShow(true);
-    }
 
     return(
-        <>  
-            <Modal size="xl" centered show={show} onHide={() => setShow(false)}>
-                <Image src={image[0]} />
-            </Modal>
-            <Row className="mt-3 project">
-                <Col xs={12} md={{span: 4, offset: 1}}>
-                    <Image src={joke_board} fluid className="h-100" onClick={() => handleShow([joke_board])}/>
+        <Container className="mt-0 mt-sm-5" id="projects">
+            <hr/>
+            <Row className="project">
+                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                    <JokeBoard />
+                </Col>
+                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                    <ToDo />
                 </Col>
             </Row>
-        </>
+            <Row className="project">
+                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                    <CrimeReport />
+                </Col>
+                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                    <Location />
+                </Col>
+            </Row>
+            <hr/>
+        </Container>
     );
 }

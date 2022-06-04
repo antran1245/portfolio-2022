@@ -1,6 +1,19 @@
 .project {
-    img {
-        border: 10px solid #9BA4B4;
-        border-radius: 10px;
+    font-family: cursive;
+    .card {
+        border: none;
+        box-shadow: 5px 5px 10px black;
+        background-color: #394867;
+        color: #F1F6F9;
+        ul {
+            list-style-type: disc;
+        }
+        a {
+            color: #F1F6F9;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #14274E;
+        }
     }
 }
