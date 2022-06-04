@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import {Container} from 'react-bootstrap';
+import { useState } from 'react';
+import FrontPage from './components/FrontPage';
+import Main from './components/Main';
 import './App.css';
 
 function App() {
+  const [show, setShow] = useState(true)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className='p-0'>
+      <FrontPage show={show} setShow={setShow}/>
+      <Main show={show}/>
+    </Container>
   );
 }
 
