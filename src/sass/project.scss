@@ -3,7 +3,6 @@
     .card {
         border: none;
         box-shadow: 5px 5px 10px black;
-        background-color: #394867;
         color: #F1F6F9;
         ul {
             list-style-type: disc;
@@ -16,4 +15,8 @@
             color: #14274E;
         }
     }
+}
+
+.overlay {
+    background-color: rgba($color: #b13c3c, $alpha: 0.4);
 }

@@ -1,40 +1,50 @@
 import { Card, Row, Col } from 'react-bootstrap';
 import joke_board from "../../img/joke_board.png";
+import { useState } from 'react';
 
 export default function JokeBoard() {
+    const [hover, setHover] = useState(false);
     return(
-        <Card className="h-100 mt-2 mt-sm-0">
-            <Card.Img src={joke_board} fluid="true" variant="top" height={300}/>
-            <Card.Body className="d-flex flex-column justify-content-between">
-                <Card.Text className="text-center">
-                    The website integrated with multiple jokes API for visitors to find joke and vote on whether or not they like the joke.
-                </Card.Text>
-                <Card.Text as={Row}>
-                    <Col xs={6} md={{span: 6, offset: 1}} lg={{span: 6, offset: 1}}>
-                        <b>Front End</b>
-                        <br/><ul>
-                            <li>JavaScript</li>
-                            <li>CSS/SASS</li>
-                            <li>HTML</li>
-                            <li>React</li>
-                        </ul>
-                    </Col>
-                    <Col xs={6} md={5}>
-                        <b>Back End</b>
-                        <br/><ul>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                            <li>Mongoose</li>
-                        </ul>
-                    </Col>
-                </Card.Text>
-                <Card.Text as={Row} className="text-center">
-                    <b>
-                        <a  href='https://github.com/antran1245/joke-board'>Github</a> |&nbsp;
-                        <a href="http://54.145.154.50/">Live Link</a>
-                    </b>
-                </Card.Text>
-            </Card.Body>
+        <Card className="mt-2 mt-sm-0" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} >
+            {
+                hover? 
+                <Card.Img className='overlay' fluid="true" variant="top" height={350}/>:
+                <Card.Img src={joke_board} fluid="true" variant="top" height={350}/>
+            }
+            {
+                hover &&
+                <Card.ImgOverlay className="d-flex flex-column justify-content-between">
+                    <Card.Title className='text-center'>Joke Board</Card.Title>
+                    <Card.Text className="text-center">
+                        The website integrated with multiple jokes API for visitors to find joke and vote on whether or not they like the joke.
+                    </Card.Text>
+                    <Card.Text as={Row}>
+                        <Col xs={6} md={{span: 6, offset: 1}} lg={{span: 6, offset: 1}}>
+                            <b>Front End</b>
+                            <br/><ul>
+                                <li>JavaScript</li>
+                                <li>CSS/SASS</li>
+                                <li>HTML</li>
+                                <li>React</li>
+                            </ul>
+                        </Col>
+                        <Col xs={6} md={5}>
+                            <b>Back End</b>
+                            <br/><ul>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>Mongoose</li>
+                            </ul>
+                        </Col>
+                    </Card.Text>
+                    <Card.Text as={Row} className="text-center">
+                        <b>
+                            <a  href='https://github.com/antran1245/joke-board'>Github</a> |&nbsp;
+                            <a href="http://54.145.154.50/">Live Link</a>
+                        </b>
+                    </Card.Text>
+                </Card.ImgOverlay>
+            }
         </Card>
     );
 }
