@@ -11,18 +11,18 @@ export default function Projects() {
         <Container className="mt-0 mt-sm-5" id="projects">
             <hr/>
             <Row className="project">
-                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                <Col xs={12} md={{span: 6}} lg={6} className="mt-3">
                     <JokeBoard />
                 </Col>
-                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                <Col xs={12} md={{span: 6}} lg={6} className="mt-3">
                     <ToDo />
                 </Col>
             </Row>
             <Row className="project">
-                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                <Col xs={12} md={{span: 6}} lg={6} className="mt-3">
                     <CrimeReport />
                 </Col>
-                <Col xs={12} md={{span: 12}} lg={6} className="mt-3">
+                <Col xs={12} md={{span: 6}} lg={6} className="mt-3">
                     <Location />
                 </Col>
             </Row>
