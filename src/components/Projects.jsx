@@ -17,8 +17,6 @@ export default function Projects() {
                 <Col xs={12} md={{span: 6}} lg={6} className="mt-3">
                     <ToDo />
                 </Col>
-            </Row>
-            <Row className="project">
                 <Col xs={12} md={{span: 6}} lg={6} className="mt-3">
                     <CrimeReport />
                 </Col>

@@ -3,11 +3,11 @@ import '../App.css';
 import '../sass/main.scss';
 import Aboutme from './Aboutme';
 import Projects from './Projects';
+import FrontPage from './FrontPage';
 
-export default function Main(props) {
-    const {show} = props;
+export default function Main() {
     return(
-        <Container fluid="true" style={{display: show?'none': 'block'}}>
+        <Container className="main">
             <Navbar fixed='top'>
                 <Container className='justify-content-end'>
                     <Nav>
@@ -17,12 +17,10 @@ export default function Main(props) {
                         <Nav.Item>
                             <Nav.Link href='#projects'>Projects</Nav.Link>
                         </Nav.Item>
-                        {/* <Nav.Item>
-                            <Nav.Link>Contact Me</Nav.Link>
-                        </Nav.Item> */}
                     </Nav>
                 </Container>
             </Navbar>
+            <FrontPage />
             <Aboutme />
             <Projects/>
         </Container>

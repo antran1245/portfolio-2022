@@ -1,4 +1,4 @@
-import { Button, Row } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import '../sass/frontpage.scss';
@@ -7,8 +7,7 @@ export default function FrontPage(props) {
     const text = "Hello. I'm An. \n I'm a Full Stack Developer."
     const [count, setCount] = useState(0)
     const [blink, setBlink] = useState(false)
-    const [display, setDisplay] = useState([])
-    const {show, setShow} = props;
+    const [display, setDisplay] = useState([" "])
 
     useEffect(() => {
         let interval = setInterval(() => {
@@ -21,27 +20,31 @@ export default function FrontPage(props) {
         return () => clearInterval(interval)
     }, [blink, count, display])
     return(
-        <Container fluid="true" id="frontpage" style={{display: show?'flex':'none'}}>
+        <Container id="frontpage">
                 <Row>
-                    <p>
-                        {
-                            display.map((item, i) => {
-                                if(item === '\n') {
-                                    return <br key={i}/>
-                                } else {
-                                    return<span key={i}>{item}</span>
-                                }
-                            })
-                        }
-                        {
-                            blink?
-                            <span>&#65343;</span>:
-                            <span style={{visibility:'hidden'}}>&#65343;</span>
-                        }
-                    </p>
+                    <Col>
+                        <h1>
+                            {
+                                display.map((item, i) => {
+                                    if(item === '\n') {
+                                        return <br key={i}/>
+                                    } else {
+                                        return<span key={i}>{item}</span>
+                                    }
+                                })
+                            }
+                            {
+                                blink?
+                                <span>&#65343;</span>:
+                                <span style={{visibility:'hidden'}}>&#65343;</span>
+                            }
+                        </h1>
+                    </Col>
                 </Row>
-                <Row>
-                    <Button className="p-2" onClick={() => setShow(false)}>Have a look at my work &#62;</Button>
+                <Row className="mt-3">
+                    <Col>
+                        <a className="p-2" href="#projects">Have a look at my projects &#62;</a>
+                    </Col>
                 </Row>
         </Container>
     );

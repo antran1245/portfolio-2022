@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 #frontpage {
-    // background: url(../frontpage.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(49, 49, 49);
-    background-size: cover;
-    background-position: center;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,20 +8,21 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
-    p {
-        font-size: xx-large;
-        color: white;
+    h1 {
         text-align: center;
         span {
             color: rgb(85, 247, 85);
             font-weight: bolder;
+            text-shadow: 4px 4px 5px rgb(0, 0, 0);
+            transform: skew(10deg, 10deg);
         }
     }
-    button {
-        background-color: black;
+    a {
         color: rgb(85, 247, 85);
         border: 2px solid rgb(85, 247, 85);
         cursor: pointer;
         font-weight: bold;
+        background-color: transparent;
+        text-decoration: none;
     }
 }
