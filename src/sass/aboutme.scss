@@ -1,3 +1,10 @@
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-100px);
+}
 .aboutme {
     span {
         font-family: cursive;
@@ -5,7 +12,6 @@
         display: block;
     }
     a {
-        color: black;
         text-decoration: none;
     }
 }

@@ -4,7 +4,7 @@ import joke_board from "../../img/joke_board.png";
 export default function JokeBoard() {
     return(
         <Card className="mt-2 mt-sm-0">
-            <Card.Img src={joke_board} fluid="true" variant="top" height={350}/>
+            <Card.Img src={joke_board} fluid="true" variant="top" height={250}/>
             <Card.Body>
                 <Card.Title className='text-center'>Joke Board</Card.Title>
                 <Card.Text className="text-center">

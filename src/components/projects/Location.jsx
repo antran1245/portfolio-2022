@@ -4,7 +4,7 @@ import location from '../../img/location.png';
 export default function CrimeReport() {
     return(
         <Card>
-            <Card.Img src={location} fluid="true" variant="top" height={350}/>
+            <Card.Img src={location} fluid="true" variant="top" height={250}/>
             <Card.Body className="d-flex flex-column justify-content-between">
                 <Card.Title className='text-center'>Location</Card.Title>
                 <Card.Text className="text-center">

@@ -7,13 +7,13 @@ export default function ToDo() {
         <Card className="h-100">
             <Carousel controls={false} interval={3000}>
                 <Carousel.Item>
-                    <Card.Img src={todo_morning} fluid="true" variant="top" height={350}/>
+                    <Card.Img src={todo_morning} fluid="true" variant="top" height={250}/>
                     <Carousel.Caption>
                         Light Mode
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Card.Img src={todo_night} fluid="true" variant="top" height={350}/>
+                    <Card.Img src={todo_night} fluid="true" variant="top" height={250}/>
                     <Carousel.Caption>
                         Dark Mode
                     </Carousel.Caption>

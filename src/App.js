@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <Container className='p-0'>
+    <Container>
       <Main/>
     </Container>
   );
