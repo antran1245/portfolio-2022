@@ -1,6 +1,5 @@
 import { Card, Row, Col } from 'react-bootstrap';
 import joke_board from "../../img/joke_board.png";
-import { useState } from 'react';
 
 export default function JokeBoard() {
     return(

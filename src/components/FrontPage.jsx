@@ -1,4 +1,4 @@
-import { Button, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import '../sass/frontpage.scss';
@@ -43,7 +43,7 @@ export default function FrontPage(props) {
                 </Row>
                 <Row className="mt-3">
                     <Col>
-                        <a className="p-2" href="#projects">Have a look at my projects &#62;</a>
+                        <button className="p-2"><a>Have a look at my projects &#62;</a></button>
                     </Col>
                 </Row>
         </Container>

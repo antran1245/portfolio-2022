@@ -17,12 +17,19 @@
             transform: skew(10deg, 10deg);
         }
     }
-    a {
-        color: rgb(85, 247, 85);
+    button {
         border: 2px solid rgb(85, 247, 85);
-        cursor: pointer;
-        font-weight: bold;
         background-color: transparent;
-        text-decoration: none;
+        box-shadow: 4px 4px 5px black;
+        a{
+            color: rgb(85, 247, 85);
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    button:active {
+        box-shadow: none;
+        transform: translate(4px,4px);
     }
 }

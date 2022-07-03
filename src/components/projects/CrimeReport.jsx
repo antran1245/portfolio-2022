@@ -1,6 +1,5 @@
 import { Card, Row, Col } from 'react-bootstrap';
 import crime_report from "../../img/crime_report.png";
-import { useState } from 'react';
 
 export default function CrimeReport() {
     return(

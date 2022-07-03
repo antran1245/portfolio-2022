@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Card, Carousel, Row, Col } from "react-bootstrap";
 import todo_morning from "../../img/todo_morning.png";
 import todo_night from "../../img/todo_night.png";
