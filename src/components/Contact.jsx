@@ -9,8 +9,12 @@ export default function Contact () {
             <br id="contact"/>
             <Form onSubmit={submitHandle}>
                 <Form.Group className="mb-3">
+                    <Form.Label>Name <Form.Text className="text-muted">(Optional)</Form.Text></Form.Label>
+                    <Form.Control type="text" placeholder="Enter your name"/>
+                </Form.Group>
+                <Form.Group className="mb-3">
                     <Form.Label>Email Address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email"/>
+                    <Form.Control type="email" placeholder="Enter email" required/>
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Subject <Form.Text className="text-muted">(Optional)</Form.Text></Form.Label>
@@ -18,7 +22,7 @@ export default function Contact () {
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Label>Detail</Form.Label>
-                    <Form.Control as={"textarea"} rows={4}/>
+                    <Form.Control as={"textarea"} rows={4} required/>
                 </Form.Group>
                 <Row>
                     <Col className="d-flex justify-content-end">
