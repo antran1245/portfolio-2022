@@ -4,6 +4,7 @@ import '../sass/main.scss';
 import Aboutme from './Aboutme';
 import Projects from './Projects';
 import FrontPage from './FrontPage';
+import Contact from './Contact';
 
 export default function Main() {
     return(
@@ -23,6 +24,7 @@ export default function Main() {
             <FrontPage />
             <Aboutme />
             <Projects/>
+            <Contact/>
         </Container>
     );
 }
