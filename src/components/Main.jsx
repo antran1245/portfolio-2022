@@ -18,6 +18,9 @@ export default function Main() {
                         <Nav.Item>
                             <Nav.Link href='#projects'>Projects</Nav.Link>
                         </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='#contact'>Contact</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                 </Container>
             </Navbar>
