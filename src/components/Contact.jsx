@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import "../sass/contact.scss";
 
-export default function Contact () {
+export default function Contact (props) {
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -24,8 +25,7 @@ export default function Contact () {
         console.log(err)
     }
     return(
-        <>
-            <br id="contact"/>
+        <section id="contact" ref={e => props.refer.current[3] = e}>
             <Form onSubmit={submitHandle}>
                 <Form.Group className="mb-3">
                     <Form.Label>Name <Form.Text className="text-muted">(Optional)</Form.Text></Form.Label>
@@ -51,7 +51,6 @@ export default function Contact () {
                     </Col>
                 </Row>
             </Form>
-            <hr />
-        </>
+        </section>
     );
 }

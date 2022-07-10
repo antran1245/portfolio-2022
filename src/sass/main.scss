@@ -1,6 +1,11 @@
 .container {
-    overflow-y: auto;
     scrollbar-width: none;
+    overflow-y: auto;
+    // #scrollContainer {
+    //     overflow-y: auto;
+    //     scroll-snap-type: y mandatory;
+    //     height: 100vh;
+    // }
 }
 .container::-webkit-scrollbar {
     display: none;

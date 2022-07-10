@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useRef } from 'react';
 import '../App.css';
 import '../sass/main.scss';
 import Aboutme from './Aboutme';
@@ -7,27 +8,37 @@ import FrontPage from './FrontPage';
 import Contact from './Contact';
 
 export default function Main() {
+    const currentRef = useRef([])
+    
+    const scrollTo = (link) => {
+        currentRef.current[link].scrollIntoView({behavior:"smooth"})
+    }
     return(
         <Container className="main">
             <Navbar fixed='top'>
                 <Container className='justify-content-end'>
                     <Nav>
                         <Nav.Item>
-                            <Nav.Link href='#aboutme'>About Me</Nav.Link>
+                            <Nav.Link onClick={() => scrollTo(0)}>Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='#projects'>Projects</Nav.Link>
+                            <Nav.Link onClick={() => scrollTo(1)}>About Me</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='#contact'>Contact</Nav.Link>
+                            <Nav.Link onClick={() => scrollTo(2)}>Projects</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link onClick={() => scrollTo(3)}>Contact</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Container>
             </Navbar>
-            <FrontPage />
-            <Aboutme />
-            <Projects/>
-            <Contact/>
+            <div id='scrollContainer'>
+                <FrontPage refer={currentRef}/>
+                <Aboutme refer={currentRef}/>
+                <Projects refer={currentRef}/>
+                <Contact refer={currentRef}/>
+            </div>
         </Container>
     );
 }

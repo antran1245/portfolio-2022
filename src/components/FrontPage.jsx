@@ -1,6 +1,5 @@
 import { Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
 import '../sass/frontpage.scss';
 
 export default function FrontPage(props) {
@@ -20,7 +19,7 @@ export default function FrontPage(props) {
         return () => clearInterval(interval)
     }, [blink, count, display])
     return(
-        <Container id="frontpage">
+        <section id="frontpage" ref={e => props.refer.current[0] = e}>
                 <Row>
                     <Col>
                         <h1>
@@ -46,6 +45,6 @@ export default function FrontPage(props) {
                         <button className="p-2"><a href="#projects">Have a look at my projects &#62;</a></button>
                     </Col>
                 </Row>
-        </Container>
+        </section>
     );
 }

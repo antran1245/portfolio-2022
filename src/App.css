@@ -9,3 +9,7 @@
 body {
   background-color: #F1F6F9 !important;
 }
+
+section {
+  scroll-snap-align: center;
+}
