@@ -1,7 +1,10 @@
 .messageBox{
-    border-radius: 10px;
     main {
-        background-color: red;
+        padding: 20px 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: #898AA6;
     }
     .triangle {
         display: flex;
@@ -9,7 +12,7 @@
         div{
             height: 0px;
             width: 0px;
-            border-top: 50px solid blue;
+            border-top: 50px solid #898AA6;
             border-left: 50px solid transparent;
         }
     }
