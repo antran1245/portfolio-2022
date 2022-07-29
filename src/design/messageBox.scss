@@ -1,0 +1,16 @@
+.messageBox{
+    border-radius: 10px;
+    main {
+        background-color: red;
+    }
+    .triangle {
+        display: flex;
+        justify-content: end;
+        div{
+            height: 0px;
+            width: 0px;
+            border-top: 50px solid blue;
+            border-left: 50px solid transparent;
+        }
+    }
+}
