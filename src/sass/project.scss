@@ -3,9 +3,10 @@
 }
 .project {
     font-family: cursive;
+    padding: 0 10px;
     .card {
         border: none;
-        box-shadow: 5px 5px 10px black;
+        box-shadow: 0px 0px 10px black;
         color: #000000;
         ul {
             list-style-type: disc;

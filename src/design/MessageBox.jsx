@@ -1,7 +1,7 @@
 import './messageBox.scss';
 export default function MessageBox(props) {
     return(
-        <div className="messageBox">
+        <div className={""+props.box}>
             <main className="content">
                 {props.children}
             </main>

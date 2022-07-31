@@ -27,7 +27,10 @@ export default function Contact (props) {
     }
     return(
         <section id="contact" ref={e => props.refer.current[3] = e}>
-                <MessageBox>
+                <MessageBox box="otherMessageBox">
+                    <p>How to contact you?</p>
+                </MessageBox>
+                <MessageBox box="messageBox">
                     <Form onSubmit={submitHandle}>
                         <Form.Group className="mb-3">
                             <Form.Label>Name <Form.Text className="text-muted">(Optional)</Form.Text></Form.Label>

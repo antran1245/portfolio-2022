@@ -11,7 +11,10 @@ export default function Projects(props) {
     return(
         <section id="projects" ref={e => props.refer.current[2] = e}>
             <br />
-            <MessageBox>
+            <MessageBox box="otherMessageBox">
+                <p>Projects</p>
+            </MessageBox>
+            <MessageBox box="messageBox">
                 <Row className="project">
                     <Col xs={12} md={{span: 6}} lg={4} className="mt-3">
                         <JokeBoard />

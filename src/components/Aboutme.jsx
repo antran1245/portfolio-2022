@@ -6,7 +6,10 @@ import '../sass/aboutme.scss';
 export default function Aboutme(props) {
     return(
         <section id="aboutme" ref={e => props.refer.current[1] = e}>
-            <MessageBox>
+            <MessageBox box="otherMessageBox">
+                <p>Tell us about yourself.</p>
+            </MessageBox>
+            <MessageBox box="messageBox">
                 <Row className="mt-4 mt-md-5 text-center aboutme">
                     <Col xs={{span:10, offset:1}} md={{span:6, offset: 3}} lg={{span: 4, offset: 4}}>
                         <span>
