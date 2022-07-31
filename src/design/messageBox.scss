@@ -1,6 +1,5 @@
 .messageBox, .otherMessageBox {
     main {
-        padding: 20px 0;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -14,6 +13,7 @@
 }
 .messageBox{
     main {
+        padding: 20px 0;
         border-bottom-left-radius: 10px;
         background-color: #898AA6;
     }
@@ -28,7 +28,9 @@
 }
 
 .otherMessageBox {
+    margin-bottom: 30px;
     main {
+        padding: 10px 0;
         border-bottom-right-radius: 10px;
         background-color: #C9BBCF;
     }
@@ -40,6 +42,8 @@
         }
     }
     p {
-        padding: 0 10px;
+        padding: 0 20px;
+        font-family: cursive;
+        font-size: xx-large;
     }
 }

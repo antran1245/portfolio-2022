@@ -33,7 +33,7 @@ export default function Contact (props) {
                 <MessageBox box="messageBox">
                     <Form onSubmit={submitHandle}>
                         <Form.Group className="mb-3">
-                            <Form.Label>Name <Form.Text className="text-muted">(Optional)</Form.Text></Form.Label>
+                            <Form.Label>Name <Form.Text className="text-white">(Optional)</Form.Text></Form.Label>
                             <Form.Control type="text" placeholder="Enter your name" onChange={(e) => setForm({...form, name:e.target.value})}/>
                         </Form.Group>
                         <Form.Group className="mb-3">
@@ -42,7 +42,7 @@ export default function Contact (props) {
                             <Form.Control type="text" placeholder="Enter email" onChange={(e) => setForm({...form, email:e.target.value})}/>
                         </Form.Group>
                         <Form.Group className="mb-3">
-                            <Form.Label>Subject <Form.Text className="text-muted">(Optional)</Form.Text></Form.Label>
+                            <Form.Label>Subject <Form.Text className="text-white">(Optional)</Form.Text></Form.Label>
                             <Form.Control type="text" placeholder="Enter subject" onChange={(e) => setForm({...form, subject:e.target.value})}/>
                         </Form.Group>
                         <Form.Group className="mb-3">
