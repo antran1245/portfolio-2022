@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import JokeBoard from "./projects/JokeBoard";
 import ToDo from "./projects/ToDo";
 import CrimeReport from "./projects/CrimeReport";

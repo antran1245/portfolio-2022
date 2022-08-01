@@ -25,7 +25,8 @@ export default function Aboutme(props) {
                 <Row className="mt-1 mt-md-2 text-center aboutme">
                     <Col>
                         <b>
-                            <a href="https://github.com/antran1245">Github</a> | &nbsp;
+                            <a href="https://github.com/antran1245">
+                                Github</a> | &nbsp;
                             <a href="https://www.linkedin.com/in/an-tran1245/">Linkedin</a> | &nbsp;
                             <a href={resume} download>Resume</a>
                         </b>
