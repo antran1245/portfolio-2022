@@ -9,7 +9,7 @@ import '../sass/aboutme.scss';
 export default function Aboutme(props) {
     return(
         <section id="aboutme" ref={e => props.refer.current[1] = e}>
-            <MessageBox box="otherMessageBox">
+            <MessageBox box="otherMessageBox" size="w-50">
                 <p>Tell us about yourself.</p>
             </MessageBox>
             <MessageBox box="messageBox">

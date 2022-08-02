@@ -34,7 +34,7 @@ export default function Main() {
                 </Container>
             </Navbar>
             <div id='scrollContainer'>
-                <FrontPage refer={currentRef}/>
+                <FrontPage refer={currentRef} scrollToProject={() => scrollTo(2)}/>
                 <Aboutme refer={currentRef}/>
                 <Projects refer={currentRef}/>
                 <Contact refer={currentRef}/>

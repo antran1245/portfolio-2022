@@ -15,13 +15,13 @@
     main {
         padding: 20px 0;
         border-bottom-left-radius: 10px;
-        background-color: #898AA6;
+        background-color: #EDEDED;
     }
     .triangle {
         display: flex;
         justify-content: end;
         div{
-            border-top: 50px solid #898AA6;
+            border-top: 50px solid #EDEDED;
             border-left: 50px solid transparent;
         }
     }
@@ -29,15 +29,16 @@
 
 .otherMessageBox {
     margin-bottom: 30px;
+    color: white;
     main {
         padding: 10px 0;
         border-bottom-right-radius: 10px;
-        background-color: #C9BBCF;
+        background-color: #444444;
     }
     .triangle {
         justify-content: start;
         div{
-            border-top: 50px solid #C9BBCF;
+            border-top: 50px solid #444444;
             border-right: 50px solid transparent;
         }
     }

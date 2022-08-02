@@ -12,7 +12,7 @@ export default function Projects(props) {
         <section id="projects" ref={e => props.refer.current[2] = e}>
             <br />
             <br />
-            <MessageBox box="otherMessageBox">
+            <MessageBox box="otherMessageBox" size="w-50">
                 <p>Projects</p>
             </MessageBox>
             <MessageBox box="messageBox">

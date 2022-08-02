@@ -42,7 +42,7 @@ export default function FrontPage(props) {
                 </Row>
                 <Row className="mt-3">
                     <Col>
-                        <button className="p-2"><a href="#projects">Have a look at my projects &#62;</a></button>
+                        <button className="p-2" onClick={props.scrollToProject}>Have a look at my projects &#62;</button>
                     </Col>
                 </Row>
         </section>
