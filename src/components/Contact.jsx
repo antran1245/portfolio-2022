@@ -19,7 +19,7 @@ export default function Contact (props) {
         err.body = form.body === ""
         setError({...err})
         if(!err.body && !err.email) {
-            window.location.href = `mailto:antran1245@gmail.com?subject=${form.subject}&body=${form.body}%0D%0A${form.name}%0D%0A${form.email}`
+            window.location.href = `mailto:antran1245@gmail.com?subject=${form.subject}&body=${form.body}%0D%0A${form.name}`
         }
         console.log(err)
     }
