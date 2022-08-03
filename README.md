@@ -2,6 +2,8 @@
 
 Create a simple portfolio page. Where visitors can read a little bit about myself, see some of my projects, and contact me.
 
+[Live Link](https://antran1245.github.io/portfolio-2022)
+
 ## Run
 - `yarn start`
 
