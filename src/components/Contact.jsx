@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import MessageBox from "../design/MessageBox";
 import "../sass/contact.scss";
 
@@ -29,26 +32,37 @@ export default function Contact (props) {
                     <p>How to contact you?</p>
                 </MessageBox>
                 <MessageBox box="messageBox">
-                    <Form onSubmit={submitHandle}>
-                        <Form.Group className="mb-3">
-                            <Form.Label>Name <Form.Text className="text-dark">(Optional)</Form.Text></Form.Label>
-                            <Form.Control type="text" placeholder="Enter your name" onChange={(e) => setForm({...form, name:e.target.value})}/>
-                        </Form.Group>
-                        <Form.Group className="mb-3">
-                            <Form.Label>Subject <Form.Text className="text-dark">(Optional)</Form.Text></Form.Label>
-                            <Form.Control type="text" placeholder="Enter subject" onChange={(e) => setForm({...form, subject:e.target.value})}/>
-                        </Form.Group>
-                        <Form.Group className="mb-3">
-                            <Form.Label>Detail<span className="text-danger"> *</span></Form.Label>
-                            {error.body && <p className="text-danger">Detail is required</p>}
-                            <Form.Control as={"textarea"} rows={4} onChange={(e) => setForm({...form, body: e.target.value})}/>
-                        </Form.Group>
-                        <Row>
-                            <Col className="d-flex justify-content-end">
-                                <Button variant="primary" type="submit" className="w-50">Send</Button>
-                            </Col>
-                        </Row>
-                    </Form>
+                    <Row>
+                        <Col xs={12} sm={6} className="d-flex flex-column pt-2 pt-sm-5 align-items-center">
+                            <div className="pb-3">
+                                <a href="https://www.linkedin.com/in/an-tran1245/"><FontAwesomeIcon icon={faLinkedin} size="lg"/> an-tran1245</a>
+                                <div className="mt-3"><FontAwesomeIcon icon={faEnvelope} size="lg"/> antran1245@gmail.com</div>
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={6}>
+                            <Form onSubmit={submitHandle}>
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Name <Form.Text className="text-dark">(Optional)</Form.Text></Form.Label>
+                                    <Form.Control type="text" placeholder="Enter your name" onChange={(e) => setForm({...form, name:e.target.value})}/>
+                                </Form.Group>
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Subject <Form.Text className="text-dark">(Optional)</Form.Text></Form.Label>
+                                    <Form.Control type="text" placeholder="Enter subject" onChange={(e) => setForm({...form, subject:e.target.value})}/>
+                                </Form.Group>
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Detail<span className="text-danger"> *</span></Form.Label>
+                                    {error.body && <p className="text-danger">Detail is required</p>}
+                                    <Form.Control as={"textarea"} rows={4} onChange={(e) => setForm({...form, body: e.target.value})}/>
+                                </Form.Group>
+                                <Row>
+                                    <Col className="d-flex justify-content-end">
+                                        <Button variant="primary" type="submit" className="w-50">Send</Button>
+                                    </Col>
+                                </Row>
+                            </Form>
+                        </Col>
+
+                    </Row>
                 </MessageBox>
             </section>
     );
