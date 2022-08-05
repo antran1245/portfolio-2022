@@ -6,6 +6,7 @@ import Aboutme from './Aboutme';
 import Projects from './Projects';
 import FrontPage from './FrontPage';
 import Contact from './Contact';
+import Skills from './Skills';
 
 export default function Main() {
     const currentRef = useRef([])
@@ -25,10 +26,13 @@ export default function Main() {
                             <Nav.Link onClick={() => scrollTo(1)}>About Me</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(2)}>Projects</Nav.Link>
+                            <Nav.Link onClick={() => scrollTo(2)}>Technologies</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(3)}>Contact</Nav.Link>
+                            <Nav.Link onClick={() => scrollTo(3)}>Projects</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link onClick={() => scrollTo(4)}>Contact</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Container>
@@ -36,6 +40,7 @@ export default function Main() {
             <div id='scrollContainer'>
                 <FrontPage refer={currentRef} scrollToProject={() => scrollTo(2)}/>
                 <Aboutme refer={currentRef}/>
+                <Skills refer={currentRef}/>
                 <Projects refer={currentRef}/>
                 <Contact refer={currentRef}/>
             </div>

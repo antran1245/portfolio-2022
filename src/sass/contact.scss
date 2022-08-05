@@ -7,6 +7,17 @@
         text-decoration: none;
         color: black;
     }
+    #icon-box > *{
+        display: flex;
+        align-items: center;
+        * {
+            padding: 5px;
+            margin: 0;
+        }
+        p {
+            font-size: larger;
+        }
+    }
 }
 
 form {

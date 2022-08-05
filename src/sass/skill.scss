@@ -1,0 +1,11 @@
+#skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skill-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

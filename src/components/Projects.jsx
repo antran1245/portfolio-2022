@@ -9,11 +9,11 @@ import MessageBox from "../design/MessageBox";
 export default function Projects(props) {
 
     return(
-        <section id="projects" ref={e => props.refer.current[2] = e}>
+        <section id="projects" ref={e => props.refer.current[3] = e}>
             <br />
             <br />
             <MessageBox box="otherMessageBox" size="w-50">
-                <p>Projects</p>
+                <p>Can I hear about some of your Projects?</p>
             </MessageBox>
             <MessageBox box="messageBox">
                 <Row className="project">

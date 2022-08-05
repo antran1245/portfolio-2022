@@ -27,16 +27,22 @@ export default function Contact (props) {
         console.log(err)
     }
     return(
-        <section id="contact" ref={e => props.refer.current[3] = e}>
+        <section id="contact" ref={e => props.refer.current[4] = e}>
                 <MessageBox box="otherMessageBox" size="w-50">
                     <p>How to contact you?</p>
                 </MessageBox>
                 <MessageBox box="messageBox">
                     <Row>
                         <Col xs={12} sm={6} className="d-flex flex-column pt-2 pt-sm-5 align-items-center">
-                            <div className="pb-3">
-                                <a href="https://www.linkedin.com/in/an-tran1245/"><FontAwesomeIcon icon={faLinkedin} size="lg"/> an-tran1245</a>
-                                <div className="mt-3"><FontAwesomeIcon icon={faEnvelope} size="lg"/> antran1245@gmail.com</div>
+                            <div className="pb-3" id="icon-box">
+                                <a href="https://www.linkedin.com/in/an-tran1245/">
+                                    <FontAwesomeIcon icon={faLinkedin} size="3x"/> 
+                                    <p>an-tran1245</p>
+                                </a>
+                                <div className="mt-3">
+                                    <FontAwesomeIcon icon={faEnvelope} size="3x"/>
+                                    <p>antran1245@gmail.com</p>
+                                </div>
                             </div>
                         </Col>
                         <Col xs={12} sm={6}>
