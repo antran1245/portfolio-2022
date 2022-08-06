@@ -20,6 +20,7 @@ export default function FrontPage(props) {
     }, [blink, count, display])
     return(
         <section id="frontpage" ref={e => props.refer.current[0] = e}>
+            <div id="computer">
                 <Row>
                     <Col>
                         <h1>
@@ -45,6 +46,9 @@ export default function FrontPage(props) {
                         <button className="p-2" onClick={props.scrollToProject}>Have a look at my projects &#62;</button>
                     </Col>
                 </Row>
+            </div>
+            <div className="stand"></div>
+            <div id="keyboard"></div>
         </section>
     );
 }

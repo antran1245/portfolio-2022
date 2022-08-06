@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 #frontpage {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     font-family: 'Roboto Mono', monospace;
+
+    #computer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 10px;
+        border: 7px solid white;
+        border-radius: 15px;
+        width: 800px;
+        height: 300px;
+    }
     h1 {
         text-align: center;
         span {
@@ -28,5 +40,40 @@
     button:active {
         box-shadow: none;
         transform: translate(4px,4px);
+    }
+}
+
+#keyboard, .stand {
+    height: 0;
+}
+
+.stand {
+    width: 125px;
+    border-bottom: 50px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+#keyboard {
+    margin-top: 10px;
+    border-bottom: 50px solid white;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    width: 400px;
+}
+
+@media (max-width: 576px) {
+    #computer {
+        width: 400px !important;
+    }
+}
+@media (min-width:576px) and (max-width: 768px) {
+    #computer {
+        width: 500px !important;
+    }
+}
+@media (min-width:768px) and (max-width: 992px) {
+    #computer {
+        width: 600px !important;
     }
 }
