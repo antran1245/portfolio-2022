@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.ffd7a9ed.css",
-    "main.js": "/portfolio-2022/static/js/main.1920b042.js",
+    "main.css": "/portfolio-2022/static/css/main.1edacdd1.css",
+    "main.js": "/portfolio-2022/static/js/main.c7f5152c.js",
     "static/js/787.d5360f6f.chunk.js": "/portfolio-2022/static/js/787.d5360f6f.chunk.js",
     "static/media/todo_night.png": "/portfolio-2022/static/media/todo_night.2e9c3d66050abaf8b282.png",
     "static/media/todo_morning.png": "/portfolio-2022/static/media/todo_morning.f9779cf86ce7cd020445.png",
@@ -11,12 +11,12 @@
     "static/media/An_Tran_Resume.pdf": "/portfolio-2022/static/media/An_Tran_Resume.1997027a67d5ba48cc33.pdf",
     "static/media/joke_board.png": "/portfolio-2022/static/media/joke_board.fcaecd6b790524495454.png",
     "index.html": "/portfolio-2022/index.html",
-    "main.ffd7a9ed.css.map": "/portfolio-2022/static/css/main.ffd7a9ed.css.map",
-    "main.1920b042.js.map": "/portfolio-2022/static/js/main.1920b042.js.map",
+    "main.1edacdd1.css.map": "/portfolio-2022/static/css/main.1edacdd1.css.map",
+    "main.c7f5152c.js.map": "/portfolio-2022/static/js/main.c7f5152c.js.map",
     "787.d5360f6f.chunk.js.map": "/portfolio-2022/static/js/787.d5360f6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffd7a9ed.css",
-    "static/js/main.1920b042.js"
+    "static/css/main.1edacdd1.css",
+    "static/js/main.c7f5152c.js"
   ]
 }
