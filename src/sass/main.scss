@@ -19,4 +19,20 @@
         margin: 10px;
         font-family: cursive;
     }
+    .nav-link:hover {
+        // background-color: rgba($color: white, $alpha: 0.5);
+        color: #646464 !important;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        .nav-item:hover, .nav-link:hover {
+            background-color: white;
+            color: #646464 !important;
+        }
+    }
 }

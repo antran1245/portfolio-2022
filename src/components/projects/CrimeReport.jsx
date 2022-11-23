@@ -4,7 +4,7 @@ import crime_report from "../../img/crime_report.png";
 export default function CrimeReport() {
     return(
         <Card>
-            <Card.Img src={crime_report} fluid="true" variant="top" height={250}/>
+            <Card.Img src={crime_report} fluid="true" variant="top"/>
             <Card.Body>
                 <Card.Title className='text-center'>Crime Report</Card.Title>
                 <Card.Text className="text-center">

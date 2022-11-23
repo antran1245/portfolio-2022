@@ -28,7 +28,7 @@ export default function Contact (props) {
     }
     return(
         <section id="contact" ref={e => props.refer.current[4] = e}>
-                <MessageBox box="otherMessageBox" size="w-50">
+                <MessageBox box="otherMessageBox" size="w-md-50">
                     <p>How to contact you?</p>
                 </MessageBox>
                 <MessageBox box="messageBox">

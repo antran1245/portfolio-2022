@@ -19,7 +19,7 @@
     }
     .triangle {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         div{
             border-top: 50px solid #EDEDED;
             border-left: 50px solid transparent;
@@ -46,5 +46,16 @@
         padding: 0 20px;
         font-family: cursive;
         font-size: xx-large;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .messageBox, .otherMessageBox {
+        main {
+            p, span {
+                font-size: 16px;
+            }
+        }
     }
 }

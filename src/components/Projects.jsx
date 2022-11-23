@@ -13,12 +13,12 @@ export default function Projects(props) {
         <section id="projects" ref={e => props.refer.current[3] = e}>
             <br />
             <br />
-            <MessageBox box="otherMessageBox" size="w-50">
+            <MessageBox box="otherMessageBox" size="w-md-50">
                 <p>Can I hear about some of your Projects?</p>
             </MessageBox>
             <MessageBox box="messageBox">
                 <Row className="project">
-                <Col xs={12} md={{span: 6}} lg={4} className="mt-3">
+                    <Col xs={12} md={{span: 6}} lg={4} className="mt-3">
                         <SpaceTourism />
                     </Col>
                     <Col xs={12} md={{span: 6}} lg={4} className="mt-3">

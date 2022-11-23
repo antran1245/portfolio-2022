@@ -4,7 +4,7 @@ import space_tourism from "../../img/space_tourism.png";
 export default function SpaceTourism() {
     return(
         <Card className="mt-2 mt-sm-0 h-100">
-            <Card.Img src={space_tourism} fluid="true" variant="top" height={250}/>
+            <Card.Img src={space_tourism} fluid="true" variant="top"/>
             <Card.Body>
                 <Card.Title className="text-center">Space Tourism</Card.Title>
                 <Card.Text className="text-center">

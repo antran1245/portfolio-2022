@@ -7,33 +7,33 @@ import '../sass/skill.scss';
 export default function Skills(props) {
     return(
         <section id="skills" ref={e => props.refer.current[2] = e}>
-            <MessageBox box="otherMessageBox" size={"w-75"}>
+            <MessageBox box="otherMessageBox" size={"w-md-75"}>
                 <p>What are some of the technologies you used?</p>
             </MessageBox>
             <MessageBox box="messageBox">
                 <Row>
-                    <Col xs={6} sm={3} md={2} className="skill-group">
-                        <FontAwesomeIcon icon={faReact}  size="6x"/>
+                    <Col xs={4} sm={3} md={2} className="skill-group">
+                        <FontAwesomeIcon icon={faReact}/>
                         <p>React</p>
                     </Col>
-                    <Col xs={6} sm={3} md={2} className="skill-group">
-                        <FontAwesomeIcon icon={faJava}  size="6x"/>
+                    <Col xs={4} sm={3} md={2} className="skill-group">
+                        <FontAwesomeIcon icon={faJava}/>
                         <p>Java</p>
                     </Col>
-                    <Col xs={6} sm={3} md={2} className="skill-group">
-                        <FontAwesomeIcon icon={faPython} size="6x"/>
+                    <Col xs={4} sm={3} md={2} className="skill-group">
+                        <FontAwesomeIcon icon={faPython}/>
                         <p>Python</p>
                     </Col>
-                    <Col xs={6} sm={3} md={2} className="skill-group">
-                        <FontAwesomeIcon icon={faSquareJs} size="6x"/>
+                    <Col xs={4} sm={3} md={2} className="skill-group">
+                        <FontAwesomeIcon icon={faSquareJs}/>
                         <p>JavaScript</p>
                     </Col>
-                    <Col xs={6} sm={3} md={2} className="skill-group">
-                        <FontAwesomeIcon icon={faHtml5} size="6x"/>
+                    <Col xs={4} sm={3} md={2} className="skill-group">
+                        <FontAwesomeIcon icon={faHtml5}/>
                         <p>HTML</p>
                     </Col>
-                    <Col xs={6} sm={3} md={2} className="skill-group">
-                        <FontAwesomeIcon icon={faCss3Alt} size="6x"/>
+                    <Col xs={4} sm={3} md={2} className="skill-group">
+                        <FontAwesomeIcon icon={faCss3Alt}/>
                         <p>CSS</p>
                     </Col>
                 </Row>

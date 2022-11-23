@@ -16,25 +16,28 @@ export default function Main() {
     }
     return(
         <Container className="main">
-            <Navbar fixed='top'>
+            <Navbar fixed='top' expand="md" variant='dark'>
                 <Container className='justify-content-end'>
-                    <Nav>
-                        <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(0)}>Home</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(1)}>About Me</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(2)}>Technologies</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(3)}>Projects</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link onClick={() => scrollTo(4)}>Contact</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
+                    <Navbar.Toggle aria-controls='basic-navbar'/>
+                    <Navbar.Collapse id='basic-navbar'>
+                        <Nav>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => scrollTo(0)}>Home</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => scrollTo(1)}>About Me</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => scrollTo(2)}>Technologies</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => scrollTo(3)}>Projects</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link onClick={() => scrollTo(4)}>Contact</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
             <div id='scrollContainer'>
